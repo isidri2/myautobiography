@@ -1,0 +1,28 @@
+header {
+    background-color: #2100dd;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #9b0000;
+    text-align: center;
+    font-size: 20px;
+}
+
+header, nav {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    text-decoration: none;
+}
