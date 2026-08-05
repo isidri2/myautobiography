@@ -1,25 +1,193 @@
-header {
-    background-color: #2100dd;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-nav {
-    background-color: #9b0000;
-    text-align: center;
-    font-size: 20px;
-}
-
-header, nav {
-    padding: 0;
+```css
+/* RESET */
+* {
     margin: 0;
-    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
+
+/* BODY */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2d5d8c;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #16304d;
+}
+
+
+/* MAIN */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* ARTICLES */
+article {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+article h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e3a5f;
+}
+
+article h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2d5d8c;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* PROFILE */
+.profile {
     display: flex;
     align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.personal-info {
+    flex: 1;
+    right: 20px;
+}
+
+
+/* COLUMNS */
+.columns {
+    display: flex;
     gap: 20px;
 }
 
+.columns section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+
+/* LIST */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* FAVORITES */
+.favorite {
+    text-align: center;
+}
+
+.favorite img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* FIGURE */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    body {
+        background-color: #16304d;
+    }
+}
+```

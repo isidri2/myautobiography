@@ -1,47 +1,168 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Autobiography</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="stylesheet" src="style.css">
+
 </head>
+
 <body>
-    <header>My Autobiography</header> 
-    <nav>
-        <a href="#About Me">About Me</a>
-        <a href="#My Hobbies">My Hobbies</a>
-        <a href="#My Favorites">My Favorites</a>
-    </nav>
 
-    <h1>About Myself</h1>
+    <!-- HEADER -->
+    <header>
+        <h1>My Personal Autobiography</h1>
 
-    <div class="container">
-    <img src="iamges/download (1).jpg" alt="My Photo" width="200" height="250">
-    
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#favorites">My Favorites</a>
+        </nav>
+    </header>
 
-    <div class="info"
-        <p><strong>Name:</strong>Isidrito Sobiga Tubo</p>
-        <p><strong>Birthdate:</strong>March 7, 2007</p>
-        <p><strong>Address:</strong>D - 1 Punta, Nasipit, Agusan Del Norte</p>
-        <p><strong>Job:</strong>Currently a Student</p>
-    </div>   
-</div>
 
-    <h2>My Childhood</h2>
+    <!-- MAIN CONTENT -->
+    <main>
 
-    <p>My Childhood was full of fun, learning, and unforgettable memories. I enjoyed playing outside with my friends, spending time with my family, and discovering new things every day. Even though there were challanges, they helped me become stronger and more responsible. My parents always supported and guided me, teaching me good values such as respect, kindness, and hard work. Looking back, I am thankful for the happy moments and lessons that shaped me into the person I am today.</p>
+        <!-- ABOUT ME -->
+        <article id="about">
+            <h2>About Myself</h2>
 
-    <h2>My Teenage Life</h2>
+            <section class="profile">
+                <figure>
+                    <img src="iamges/isidrito.jpg" alt="My Profile Picture" width="150" height="210">
+                    <figcaption>My Profile Picture</figcaption>
+                </figure>
 
-    <p>My teenage life has been a time of learning and growth. I have faced challenges, made new friends, and discovered my interests. These experiences have helped me become more responsible and prepared for my future.</p>
+                <div class="personal-info">
+                    <p><strong>Name:</strong> Isidrito Sobiga Tubo</p>
+                    <p><strong>Birthdate:</strong> March 7, 2007</p>
+                    <p><strong>Address:</strong> D - 1 Punta, Nasipit, Agusan Del Norte</p>
+                    <p><strong>Job:</strong> Student</p>
+                </div>
+            </section>
 
-    <h2>My Adulthood</h2>
+            <section>
+                <h3>Childhood</h3>
+                <p>
+                    When I was a child, I enjoyed playing with my friends
+                    and spending time with my family. I also enjoyed watching
+                    movies, playing games, and learning new things.
+                </p>
+            </section>
 
-    <p>As I enter adulthood, I am excited about the opportunities and challenges that lie ahead. I am focused on my education and personal development, and I am determined to achieve my goals. I look forward to building a successful career, forming meaningful relationships, and making a positive impact in my community.</p>
+            <section>
+                <h3>Teenage Life</h3>
+                <p>
+                    During my teenage years, I experienced many changes
+                    in my life. I met new friends, learned different skills,
+                    and became more responsible with my studies.
+                </p>
+            </section>
 
-<hr>
+            <section>
+                <h3>Adulthood</h3>
+                <p>
+                    As I grow older, I want to become successful and achieve
+                    my goals. I want to continue learning and build a better
+                    future for myself and my family.
+                </p>
+            </section>
+        </article>
 
+
+        <!-- HOBBIES -->
+        <article id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <div class="columns">
+
+                <section>
+                    <h3>Hobbies Inside the Home</h3>
+
+                    <ul>
+                        <li>Playing video games</li>
+                        <li>Watching movies</li>
+                        <li>Listening to music</li>
+                        <li>Using social media</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Hobbies Outside the Home</h3>
+
+                    <ul>
+                        <li>Playing basketball</li>
+                        <li>Going out with friends</li>
+                        <li>Traveling</li>
+                        <li>Going to different places</li>
+                    </ul>
+                </section>
+
+            </div>
+        </article>
+
+
+        <!-- FAVORITES -->
+        <article id="favorites">
+            <h2>My Favorites</h2>
+
+            <div class="columns">
+
+                <section class="favorite">
+                    <figure>
+                        <img src="iamges/images.jpg" alt="My Favorite Artist">
+                        <figcaption>My Favorite Artist</figcaption>
+                    </figure>
+
+                    <h3>Favorite Artist</h3>
+                    <p>
+                        My favorite artist is my favorite because I enjoy
+                        listening to their songs and I like their style of music.
+                    </p>
+                </section>
+
+
+                <section class="favorite">
+                    <figure>
+                        <img src="iamges/sisig.jpg" alt="My Favorite Food">
+                        <figcaption>My Favorite Food</figcaption>
+                    </figure>
+
+                    <h3>Favorite Food</h3>
+                    <p>
+                        My favorite food is something I enjoy eating with
+                        my family and friends.
+                    </p>
+                </section>
+
+
+                <section class="favorite">
+                    <figure>
+                        <img src="iamges/punta.jpg" alt="My Favorite Place">
+                        <figcaption>My Favorite Place</figcaption>
+                    </figure>
+
+                    <h3>Favorite Place</h3>
+                    <p>
+                        My favorite place is somewhere I can relax,
+                        enjoy the surroundings, and spend time with people
+                        who are important to me.
+                    </p>
+                </section>
+
+            </div>
+        </article>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 My Personal Autobiography. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
